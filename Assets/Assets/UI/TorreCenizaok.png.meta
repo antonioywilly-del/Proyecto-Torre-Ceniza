@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: e062d6c52fc463c47aaa8dd0a0eb157e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6489721632744742124
+    second: TorreCenizaok_0
+  - first:
+      213: -1823945345818791583
+    second: TorreCenizaok_1
+  - first:
+      213: -9149589081964992494
+    second: TorreCenizaok_2
+  - first:
+      213: -5296573529801495024
+    second: TorreCenizaok_3
+  - first:
+      213: 9130426965820797505
+    second: TorreCenizaok_4
+  - first:
+      213: -5346350697120747255
+    second: TorreCenizaok_5
+  - first:
+      213: -6957819569565940409
+    second: TorreCenizaok_6
+  - first:
+      213: -3734798905903627991
+    second: TorreCenizaok_7
+  - first:
+      213: -5237511215002412284
+    second: TorreCenizaok_8
+  - first:
+      213: 3683809988733440242
+    second: TorreCenizaok_9
+  - first:
+      213: 5198268193276605481
+    second: TorreCenizaok_10
+  - first:
+      213: -5638987252469705449
+    second: TorreCenizaok_11
+  - first:
+      213: -3066261783881831582
+    second: TorreCenizaok_12
+  - first:
+      213: 3291052852993926119
+    second: TorreCenizaok_13
+  - first:
+      213: 373513641323731406
+    second: TorreCenizaok_14
+  - first:
+      213: 4480095637747129303
+    second: TorreCenizaok_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TorreCenizaok_0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 1092
+        width: 234
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec1be2e07f101a50800000000000000
+      internalID: 6489721632744742124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_1
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1091
+        width: 547
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1617eb42f5b00b6e0800000000000000
+      internalID: -1823945345818791583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 912
+        width: 128
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2182fa0e431260180800000000000000
+      internalID: -9149589081964992494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 913
+        width: 112
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ee175ef6ace76b0800000000000000
+      internalID: -5296573529801495024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_4
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 892
+        width: 683
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142756943fac5be70800000000000000
+      internalID: 9130426965820797505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 818
+        width: 71
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 901b47dfd52fdc5b0800000000000000
+      internalID: -5346350697120747255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 817
+        width: 47
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745c2c037fbd07f90800000000000000
+      internalID: -6957819569565940409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 817
+        width: 40
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 921c812de245b2cc0800000000000000
+      internalID: -3734798905903627991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_8
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 818
+        width: 32
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40b18aaac4f9057b0800000000000000
+      internalID: -5237511215002412284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_9
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 817
+        width: 103
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f01e76caa58f1330800000000000000
+      internalID: 3683809988733440242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_10
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 817
+        width: 40
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 924b6735165f32840800000000000000
+      internalID: 5198268193276605481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_11
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 818
+        width: 42
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715569378fa4eb1b0800000000000000
+      internalID: -5638987252469705449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_12
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 817
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b2e5f37237275d0800000000000000
+      internalID: -3066261783881831582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_13
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 817
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e32dbf022b2cad20800000000000000
+      internalID: 3291052852993926119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_14
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 817
+        width: 88
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec91dd58dacfe2500800000000000000
+      internalID: 373513641323731406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TorreCenizaok_15
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 818
+        width: 75
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbd1b7fe3f7c2e30800000000000000
+      internalID: 4480095637747129303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TorreCenizaok_0: 6489721632744742124
+      TorreCenizaok_1: -1823945345818791583
+      TorreCenizaok_10: 5198268193276605481
+      TorreCenizaok_11: -5638987252469705449
+      TorreCenizaok_12: -3066261783881831582
+      TorreCenizaok_13: 3291052852993926119
+      TorreCenizaok_14: 373513641323731406
+      TorreCenizaok_15: 4480095637747129303
+      TorreCenizaok_2: -9149589081964992494
+      TorreCenizaok_3: -5296573529801495024
+      TorreCenizaok_4: 9130426965820797505
+      TorreCenizaok_5: -5346350697120747255
+      TorreCenizaok_6: -6957819569565940409
+      TorreCenizaok_7: -3734798905903627991
+      TorreCenizaok_8: -5237511215002412284
+      TorreCenizaok_9: 3683809988733440242
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
