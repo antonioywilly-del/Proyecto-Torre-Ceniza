@@ -1,0 +1,442 @@
+fileFormatVersion: 2
+guid: 4b53505617caedf4a8c0ccbb1348be9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5337766306925864851
+    second: BombaStudiosLogo_0
+  - first:
+      213: 139160057444909944
+    second: BombaStudiosLogo_1
+  - first:
+      213: -7823985410677135991
+    second: BombaStudiosLogo_2
+  - first:
+      213: -5922660137035682452
+    second: BombaStudiosLogo_3
+  - first:
+      213: -2441660516451595042
+    second: BombaStudiosLogo_4
+  - first:
+      213: -1519123855672950565
+    second: BombaStudiosLogo_5
+  - first:
+      213: 1542889540668493752
+    second: BombaStudiosLogo_6
+  - first:
+      213: 5549307227034759099
+    second: BombaStudiosLogo_7
+  - first:
+      213: -9210898632377119068
+    second: BombaStudiosLogo_8
+  - first:
+      213: -7902088061332572821
+    second: BombaStudiosLogo_9
+  - first:
+      213: -7870995498587046085
+    second: BombaStudiosLogo_10
+  - first:
+      213: 308126991378847462
+    second: BombaStudiosLogo_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BombaStudiosLogo_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 409
+        width: 321
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6892a513d17ce5b0800000000000000
+      internalID: -5337766306925864851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_1
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 406
+        width: 412
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8734deeb5556ee100800000000000000
+      internalID: 139160057444909944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_2
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 409
+        width: 436
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98520c4e8be9b6390800000000000000
+      internalID: -7823985410677135991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_3
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 409
+        width: 317
+        height: 554
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6d2f962cfb7ecda0800000000000000
+      internalID: -5922660137035682452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_4
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 409
+        width: 355
+        height: 553
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edc4ece52ba7d1ed0800000000000000
+      internalID: -2441660516451595042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_5
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 50
+        width: 169
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd0cac4e6ecfaeae0800000000000000
+      internalID: -1519123855672950565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_6
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 50
+        width: 157
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf0637dcd1796510800000000000000
+      internalID: 1542889540668493752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_7
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 50
+        width: 165
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf2ae08589130d40800000000000000
+      internalID: 5549307227034759099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_8
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 54
+        width: 169
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aec70bce705c2080800000000000000
+      internalID: -9210898632377119068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_9
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 54
+        width: 65
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b65ba6876c4265290800000000000000
+      internalID: -7902088061332572821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_10
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 53
+        width: 168
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3f350edb4b94c290800000000000000
+      internalID: -7870995498587046085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BombaStudiosLogo_11
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 52
+        width: 167
+        height: 282
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e698dabddfa64400800000000000000
+      internalID: 308126991378847462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BombaStudiosLogo_0: -5337766306925864851
+      BombaStudiosLogo_1: 139160057444909944
+      BombaStudiosLogo_10: -7870995498587046085
+      BombaStudiosLogo_11: 308126991378847462
+      BombaStudiosLogo_2: -7823985410677135991
+      BombaStudiosLogo_3: -5922660137035682452
+      BombaStudiosLogo_4: -2441660516451595042
+      BombaStudiosLogo_5: -1519123855672950565
+      BombaStudiosLogo_6: 1542889540668493752
+      BombaStudiosLogo_7: 5549307227034759099
+      BombaStudiosLogo_8: -9210898632377119068
+      BombaStudiosLogo_9: -7902088061332572821
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

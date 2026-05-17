@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Audio;
 using UnityEngine.Pool;
 
 public class AudioManager : MonoBehaviour
@@ -7,9 +6,13 @@ public class AudioManager : MonoBehaviour
     // Singleton instance
     public static AudioManager Instance { get; private set; }
 
-    [SerializeField] private AudioMixer audioMixer;
+    [Header("Audio Sources")]
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
+
+    [Header("Music Settings")]
+    [Tooltip("Clip de música que se reproducirá al iniciar.")]
+    [SerializeField] private AudioClip startingMusicClip;
 
     // Audio 3D Object Pool
     [SerializeField] private int sfx3DPoolSize = 10;
@@ -17,6 +20,9 @@ public class AudioManager : MonoBehaviour
 
     // Coroutine references para evitar race conditions
     private Coroutine currentMusicFadeCoroutine;
+
+    // Volume control (0-1 range, applied directly to AudioSource)
+    private float masterVolume = 1f;
 
     private void Awake()
     {
@@ -34,6 +40,15 @@ public class AudioManager : MonoBehaviour
         InitializeSFX3DPool();
     }
 
+    private void Start()
+    {
+        // Reproducir la música inicial si se ha asignado un clip
+        if (startingMusicClip != null)
+        {
+            PlayMusic(startingMusicClip, true);
+        }
+    }
+
     private void InitializeAudioSources()
     {
         // Create music source if not assigned
@@ -43,6 +58,7 @@ public class AudioManager : MonoBehaviour
             musicObj.transform.SetParent(transform);
             musicSource = musicObj.AddComponent<AudioSource>();
             musicSource.loop = true;
+            musicSource.playOnAwake = false;
         }
 
         // Create SFX source if not assigned
@@ -52,16 +68,7 @@ public class AudioManager : MonoBehaviour
             sfxObj.transform.SetParent(transform);
             sfxSource = sfxObj.AddComponent<AudioSource>();
             sfxSource.loop = false;
-        }
-
-        // Asignar grupos de mixer si existe
-        if (audioMixer != null)
-        {
-            AudioMixerGroup musicGroup = audioMixer.FindMatchingGroups("Music")[0];
-            AudioMixerGroup sfxGroup = audioMixer.FindMatchingGroups("SFX")[0];
-
-            if (musicGroup != null) musicSource.outputAudioMixerGroup = musicGroup;
-            if (sfxGroup != null) sfxSource.outputAudioMixerGroup = sfxGroup;
+            sfxSource.playOnAwake = false;
         }
     }
 
@@ -89,14 +96,6 @@ public class AudioManager : MonoBehaviour
         sfxObj.transform.SetParent(transform);
         AudioSource source = sfxObj.AddComponent<AudioSource>();
         source.spatialBlend = 1f; // Full 3D audio
-        
-        if (audioMixer != null)
-        {
-            AudioMixerGroup[] sfxGroups = audioMixer.FindMatchingGroups("SFX");
-            if (sfxGroups.Length > 0)
-                source.outputAudioMixerGroup = sfxGroups[0];
-        }
-
         return source;
     }
 
@@ -118,12 +117,13 @@ public class AudioManager : MonoBehaviour
     {
         if (clip == null)
         {
-            Debug.LogWarning("AudioClip is null!");
+            Debug.LogWarning("AudioManager: AudioClip is null!");
             return;
         }
 
         musicSource.clip = clip;
         musicSource.loop = loop;
+        musicSource.volume = masterVolume;
         musicSource.Play();
     }
 
@@ -158,11 +158,11 @@ public class AudioManager : MonoBehaviour
     {
         if (clip == null)
         {
-            Debug.LogWarning("AudioClip is null!");
+            Debug.LogWarning("AudioManager: AudioClip is null!");
             return;
         }
 
-        sfxSource.PlayOneShot(clip, volume);
+        sfxSource.PlayOneShot(clip, volume * masterVolume);
     }
 
     /// <summary>
@@ -172,14 +172,14 @@ public class AudioManager : MonoBehaviour
     {
         if (clip == null)
         {
-            Debug.LogWarning("AudioClip is null!");
+            Debug.LogWarning("AudioManager: AudioClip is null!");
             return;
         }
 
         AudioSource source = sfx3DPool.Get();
         source.transform.position = position;
         source.clip = clip;
-        source.volume = volume;
+        source.volume = volume * masterVolume;
         source.Play();
 
         // Retornar a pool después de que el sonido termine
@@ -202,39 +202,16 @@ public class AudioManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Set master volume (in decibels via AudioMixer)
+    /// Set master volume (0-1 range, applied directly to AudioSource)
     /// </summary>
     public void SetMasterVolume(float volume)
     {
-        if (audioMixer != null)
+        masterVolume = Mathf.Clamp01(volume);
+        
+        // Apply to active music source immediately
+        if (musicSource != null)
         {
-            // Convertir rango 0-1 a decibelios (-80 a 0 dB)
-            float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(volume));
-            audioMixer.SetFloat("Master", dB);
-        }
-    }
-
-    /// <summary>
-    /// Set music volume (in decibels via AudioMixer)
-    /// </summary>
-    public void SetMusicVolume(float volume)
-    {
-        if (audioMixer != null)
-        {
-            float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(volume));
-            audioMixer.SetFloat("Music", dB);
-        }
-    }
-
-    /// <summary>
-    /// Set SFX volume (in decibels via AudioMixer)
-    /// </summary>
-    public void SetSFXVolume(float volume)
-    {
-        if (audioMixer != null)
-        {
-            float dB = Mathf.Lerp(-80f, 0f, Mathf.Clamp01(volume));
-            audioMixer.SetFloat("SFX", dB);
+            musicSource.volume = masterVolume;
         }
     }
 
@@ -243,35 +220,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public float GetMasterVolume()
     {
-        if (audioMixer != null && audioMixer.GetFloat("Master", out float dB))
-        {
-            return Mathf.InverseLerp(-80f, 0f, dB);
-        }
-        return 1f;
-    }
-
-    /// <summary>
-    /// Get current music volume (0-1)
-    /// </summary>
-    public float GetMusicVolume()
-    {
-        if (audioMixer != null && audioMixer.GetFloat("Music", out float dB))
-        {
-            return Mathf.InverseLerp(-80f, 0f, dB);
-        }
-        return 1f;
-    }
-
-    /// <summary>
-    /// Get current SFX volume (0-1)
-    /// </summary>
-    public float GetSFXVolume()
-    {
-        if (audioMixer != null && audioMixer.GetFloat("SFX", out float dB))
-        {
-            return Mathf.InverseLerp(-80f, 0f, dB);
-        }
-        return 1f;
+        return masterVolume;
     }
 
     /// <summary>
@@ -279,7 +228,7 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public bool IsMusicPlaying()
     {
-        return musicSource.isPlaying;
+        return musicSource != null && musicSource.isPlaying;
     }
 
     /// <summary>
@@ -287,7 +236,6 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void FadeOutMusic(float duration = 2f)
     {
-        // Detener corrutina anterior si existe
         if (currentMusicFadeCoroutine != null)
         {
             StopCoroutine(currentMusicFadeCoroutine);
@@ -301,7 +249,6 @@ public class AudioManager : MonoBehaviour
     /// </summary>
     public void FadeInMusic(float duration = 2f)
     {
-        // Detener corrutina anterior si existe
         if (currentMusicFadeCoroutine != null)
         {
             StopCoroutine(currentMusicFadeCoroutine);
@@ -330,7 +277,6 @@ public class AudioManager : MonoBehaviour
     private System.Collections.IEnumerator FadeIn(float duration)
     {
         float currentVolume = musicSource.volume;
-        float targetVolume = GetMusicVolume();
         musicSource.volume = currentVolume;
         musicSource.Play();
         float elapsed = 0f;
@@ -338,11 +284,11 @@ public class AudioManager : MonoBehaviour
         while (elapsed < duration)
         {
             elapsed += Time.deltaTime;
-            musicSource.volume = Mathf.Lerp(currentVolume, targetVolume, elapsed / duration);
+            musicSource.volume = Mathf.Lerp(currentVolume, masterVolume, elapsed / duration);
             yield return null;
         }
 
-        musicSource.volume = targetVolume;
+        musicSource.volume = masterVolume;
         currentMusicFadeCoroutine = null;
     }
 }
